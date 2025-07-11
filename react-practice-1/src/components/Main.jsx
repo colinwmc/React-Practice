@@ -1,13 +1,14 @@
 export function Main() {
   return (
     <main className="main-content">
-      <h1>Reasons I'm excited to learn React</h1>
-      <ol>
-        <li>React is a popular library, so I will be able to
-          fit in with all the coolest devs out there! 😎</li>
-        <li>I am more likely to get a job as a front end developer
-          if I know React</li>
-      </ol>
+      <h1 className="main-title">Fun facts about React</h1>
+      <ul className="main-list">
+        <li>Was first released in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Has well over 200K stars on Github</li>
+        <li>Is maintained by Meta</li>
+        <li>Powers thousand of enterprie apps, including mobile apps</li>
+      </ul>
     </main>
   )
 }

@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .inter-light {
@@ -26,13 +26,9 @@
 body {
   /* padding: 20px; */
   margin: 0px;
-  font-family: "Inter, sans-serif";
-  background: #27292c;
+  font-family: Inter, "sans-serif";
+  background-color: #282D35;
   color: white;
-}
-
-h1 {
-  margin: 0;
 }
 
 .header {
@@ -65,8 +61,43 @@ h1 {
 }
 
 .main-content {
-  height: calc(70% - 2rem);
-  padding: 1rem;
+  height: calc(100% - 90px);
+  background-color: #282D35;
+  padding: 60px 30px;
+  background-image: url(./assets/React-half.png);
+  background-repeat: no-repeat;
+  background-position: right 70%;
+
+  .main-title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 2.4rem;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: -5%;
+    margin: 0;
+  }
+
+  .main-list {
+    margin-top: 46px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    max-width: 400px;
+
+    li {
+      padding-block: 10px;
+    }
+
+    li::marker {
+      color: #61DAFB;
+      font-size: 1.5rem;
+    }
+
+  }
 }
 
 .footer {
