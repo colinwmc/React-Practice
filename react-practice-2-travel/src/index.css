@@ -47,6 +47,7 @@ body {
     height: 168px;
     width: 125px;
     margin-right: 19px;
+    border-radius: 5px;
   }
 
   .entry-info {
@@ -70,6 +71,7 @@ body {
       line-height: 100%;
       letter-spacing: 1.75px;
       margin-right: 12px;
+      text-transform: uppercase;
     }
 
     .link {
@@ -123,3 +125,4 @@ body {
     }
   }
 }
+
