@@ -12,8 +12,8 @@ export default function Main() {
 
     useEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
-        .then(response => response.json())
-        .then(data => { setMemeArray(data.data.memes) })
+            .then(response => response.json())
+            .then(data => { setMemeArray(data.data.memes) })
     }, [])
 
     function handleChange(event) {
@@ -22,6 +22,11 @@ export default function Main() {
             ...prevMeme,
             [name]: value
         }))
+    }
+
+    function changeMeme() {
+        let index = Math.floor(Math.random() * (memeArray.length - 1));
+        setMeme(prevMeme => ({ ...prevMeme, imageUrl: memeArray[index].url }))
     }
 
     return (
@@ -46,7 +51,7 @@ export default function Main() {
                         value={meme.bottomText}
                     />
                 </label>
-                <button>Get a new meme image 🖼</button>
+                <button onClick={changeMeme}>Get a new meme image 🖼</button>
             </div>
             <div className="meme">
                 <img src={meme.imageUrl} />
