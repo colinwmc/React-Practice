@@ -2,6 +2,7 @@ import './Testimonial.css'
 
 export default function Testimonial({quote, name, org, imgSrc} : {quote: string, name: string, org: string, imgSrc?: string}){
     return (
+        imgSrc ?
         <div className='testimonial-wrapper'>
             <div className='backdrop'>
                 <img className='portrait' src={imgSrc} alt="" />
@@ -14,6 +15,19 @@ export default function Testimonial({quote, name, org, imgSrc} : {quote: string,
                     </div>
                 </div>
             </div>
+        </div>
+        :
+        <div className='no-pic-wrapper'>
+        <img className='dots' src="src\assets\Dot Pattern.png" alt="" />
+        <div className='content-box'>
+        <img src="src\assets\Logo.png" alt="" />
+        <div className='quote'>{quote}</div>
+        <div className='signature'>
+            <span className='name'>{name}</span>
+            <span className='slash'>/</span>
+            <span className='org'>{org}</span>
+        </div>
+        </div>
         </div>
     )
 }

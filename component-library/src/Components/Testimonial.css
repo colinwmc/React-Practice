@@ -28,8 +28,7 @@
             margin-right: 60px;
             height: 240px;
 
-            .quote-mark {
-            }
+            .quote-mark {}
 
             .quote {
                 font-family: Inter;
@@ -67,5 +66,70 @@
                 }
             }
         }
+    }
+}
+
+.no-pic-wrapper {
+    background-color: white;
+    height: 400px;
+    width: 1200px;
+    position: relative;
+
+    .dots {
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        opacity: 1;
+        top: 150px;
+
+    }
+
+    .content-box {
+        width: 60%;
+        height: 60%;
+        margin-left: 240px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .quote {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #111827;
+    }
+
+    .name {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #111827;
+    }
+
+    .slash {
+        font-family: Inter;
+        font-size: 20px;
+        color: #2E59F3;
+        font-weight: 700;
+        padding: 0 8px;
+    }
+
+    .org {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #6B7280;
     }
 }

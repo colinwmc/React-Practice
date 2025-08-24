@@ -10,11 +10,6 @@ function App() {
 
   return (
     <div className='showcase'>
-         <div className='display-box'>
-        <div className='display-title'>Testimonials: Horizontal Web Form</div>
-        <Testimonial imgSrc='src\assets\test-pic.jpg' quote='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.' name='May Andersons' org='Workcation, CTO'></Testimonial>
-        <Testimonial imgSrc='src\assets\7-c.jpg' quote='The birds. They are coming. They will come for you all.' name='the bird man' org='birds inc.'></Testimonial>
-      </div>
       <div className='display-box'>
         <div className='display-title'>Banners with variations</div>
         <Banner style="success" title="Congratulations!" text="Your file has been saved!"></Banner>
@@ -51,12 +46,17 @@ function App() {
               <p className='text2'>Simply as much as you want to put in here. No matter the layout or how many lines it takes up. It could go on forever, honestly. The card will just keep getting bigger, and bigger, and even bigger than that. Don't believe me? Go on. Try it for yourself.</p>
             </div>
           </Card>
-
           <Card icon={<FaFrog />} slotColor='forestgreen' iconColor='pink'>
             <h2 className='title3'>This is a #FrogBox</h2>
             <div className='frogBox'><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /></div>
           </Card>
         </div>
+      </div>
+      <div className='display-box'>
+        <div className='display-title'>Testimonials: Horizontal Web Form</div>
+        <Testimonial imgSrc='src\assets\test-pic.jpg' quote='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.' name='May Andersons' org='Workcation, CTO'></Testimonial>
+        <Testimonial imgSrc='src\assets\7-c.jpg' quote='The birds. They are coming. They will come for you all.' name='the bird man' org='birds inc.'></Testimonial>
+        <Testimonial quote='"This overloaded component changes form based on whether or not you provide an image for it. This is what it looks like with no image."' name='Colin McGregor' org='Component Creator'></Testimonial>
       </div>
     </div>
   )
