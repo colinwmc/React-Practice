@@ -1,0 +1,47 @@
+.card {
+    padding-top: 1.5rem;
+        width: 370px;
+        
+    .card-base {
+        background-color: #F9FAFB;
+        border-radius: 8px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        gap: 2rem;
+        position: relative;
+        color: black;
+        min-height: 144px;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            border: 1px solid transparent;
+
+        .children{
+            
+            height: 100%;
+        }
+    }
+
+    .icon-slot {
+        height: 3rem;
+        width: 3rem;
+        background-color: cornflowerblue;
+        border-radius: 6px;
+        position: absolute;
+        left: calc(50% - 1.5rem);
+        top: -1.5rem;
+        font-size: 1.5rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.card-base:hover {
+    box-shadow: 3px 4px 5px rgb(102, 102, 102);
+}

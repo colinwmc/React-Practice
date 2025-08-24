@@ -23,5 +23,57 @@ body {
 
       }
     }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .title1{
+      font-family: Inter;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #111827;
+      text-align: center;
+    }
+    .text1 {
+      font-family: Inter;
+      color: #6B7280;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    .title2{
+      font-family: Inter;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: navy;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid navy;
+      padding-right: 8px;
+      margin-right: 4px;
+    }
+    .text2 {
+      font-family: Inter;
+      color: #6B7280;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+       .title3{
+      font-family: Inter;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: forestgreen;
+      text-align: center;
+    }
+    .frogBox{
+      color: forestgreen;
+      font-size: 2rem;
+    }
   }
 }
