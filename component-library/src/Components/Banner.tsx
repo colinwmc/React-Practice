@@ -1,4 +1,4 @@
-import React from "react";
+import './Banner.css'
 import { FaCircleCheck, FaCircleXmark, FaCircleInfo, FaTriangleExclamation } from "react-icons/fa6";
 
 interface BannerProps {

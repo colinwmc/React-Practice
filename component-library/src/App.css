@@ -1,88 +1,27 @@
 body {
-  background-color: white;
+  background-color: black;
 
-  .banner {
-    width: 896px;
-    border-radius: 6px;
-    padding: 1rem;
-
-    .topline {
+  .showcase {
+    display: flex;
+    flex-wrap: wrap;
+    .display-box {
+      color: aliceblue;
+      font-family: Inter;
+      border: 1px solid aliceblue;
+      border-radius: 5px;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      height: min-content;
+      width: fit-content;
+      gap: 8px;
+      padding: 8px;
+      margin: 8px;
 
-      .icon {
-        font-size: 20px;
-        height: 20px;
+      .display-title {
+        font-size: 2rem;
+
       }
-
-      .title {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        margin: 0;
-        margin-left: 1rem;
-      }
-
-
     }
-
-    .text {
-      font-size: 14px;
-      font-weight: 400;
-      margin-left: 2.25rem;
-      margin-top: 0.5rem;
-      margin-bottom: 0;
-      margin-right: 0;
-    }
-
-    .text.success {
-      color: #047857;
-    }
-
-    .text.warning {
-      color: #B45309;
-    }
-
-    .text.error {
-      color: #B45309;
-    }
-
-    .text.info {
-      color: #1C51B9;
-    }
-
-  }
-
-  .banner.success {
-    background-color: #ECFDF5;
-  }
-
-  .banner.warning {
-    background-color: #FFFBEB;
-  }
-
-  .banner.error {
-    background-color: #FEF2F2;
-  }
-
-  .banner.info {
-    background-color: #EFF6FF;
-  }
-
-  .title.success {
-    color: #065F46;
-  }
-
-  .title.warning {
-    color: #92400E;
-  }
-
-  .title.error {
-    color: #92400E;
-  }
-
-  .title.info {
-    color: #1E40AF;
   }
 }
