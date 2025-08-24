@@ -4,11 +4,17 @@ import './App.css'
 import Banner from './Components/Banner'
 import Badge from './Components/Badge'
 import Card from './Components/Card'
+import Testimonial from './Components/Testimonial';
 
 function App() {
 
   return (
     <div className='showcase'>
+         <div className='display-box'>
+        <div className='display-title'>Testimonials: Horizontal Web Form</div>
+        <Testimonial imgSrc='src\assets\test-pic.jpg' quote='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.' name='May Andersons' org='Workcation, CTO'></Testimonial>
+        <Testimonial imgSrc='src\assets\7-c.jpg' quote='The birds. They are coming. They will come for you all.' name='the bird man' org='birds inc.'></Testimonial>
+      </div>
       <div className='display-box'>
         <div className='display-title'>Banners with variations</div>
         <Banner style="success" title="Congratulations!" text="Your file has been saved!"></Banner>
@@ -49,7 +55,7 @@ function App() {
           <Card icon={<FaFrog />} slotColor='forestgreen' iconColor='pink'>
             <h2 className='title3'>This is a #FrogBox</h2>
             <div className='frogBox'><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /><FaFrog /></div>
-            </Card>
+          </Card>
         </div>
       </div>
     </div>

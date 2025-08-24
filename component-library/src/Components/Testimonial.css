@@ -1,0 +1,71 @@
+.testimonial-wrapper {
+    height: 464px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .backdrop {
+        height: 400px;
+        width: 100%;
+        background-color: #2545B8;
+        position: relative;
+
+        .portrait {
+            position: absolute;
+            height: 464px;
+            width: 384px;
+            border-radius: 12px;
+            left: 3rem;
+            top: -2rem;
+            clip: rect(0px, 384px, 464px, 0px);
+        }
+
+        .quote-box {
+            margin-left: 456px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+            margin-right: 60px;
+            height: 240px;
+
+            .quote-mark {
+            }
+
+            .quote {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0%;
+                color: white;
+                height: 112px;
+                display: flex;
+                align-items: center;
+                padding: 1rem 0;
+            }
+
+            .signature {
+                height: 48px;
+                width: 100%;
+
+                .name {
+                    font-family: Inter;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+
+                }
+
+                .org {
+                    font-family: Inter;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+
+                }
+            }
+        }
+    }
+}
